@@ -1,6 +1,7 @@
 "use client"
 import { FaWhatsappSquare, FaInstagramSquare, FaFacebookSquare } from "react-icons/fa";
 import { sendGTMEvent } from '@next/third-parties/google';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -29,7 +30,7 @@ export default function Footer() {
         </div>
         
         {/* Redes Sociales */}
-        <div className="flex space-x-6 mt-4 hover:text-black">
+        <div className="flex items-center space-x-6 mt-4 hover:text-black">
           {/*<a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
             <FaFacebookSquare size={30} className="text-blue-600 hover:text-blue-800" />
           </a>*/}
@@ -45,6 +46,22 @@ export default function Footer() {
           {/*<a href="https://wa.me/+5493704502381" target="_blank" rel="noopener noreferrer">
             <FaWhatsappSquare size={30} className="text-green-500 hover:text-green-700" />
           </a>*/}
+        </div>
+        <div className="flex items-center space-x-6 mt-4 text-sm text-black hover:text-white cursor-pointer">
+          <p>desarrollado por <b>BuRHò Profesional 2024</b></p>
+            <a 
+            href="https://www.facebook.com/burhoprofesional"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            <Image 
+            src="/Logo_burho_f_negro.png" 
+            alt="Logo_burho" 
+            width="25" 
+            height="25" 
+            className='rounded-full' 
+            />
+            </a>
         </div>
       </div>
     </footer>

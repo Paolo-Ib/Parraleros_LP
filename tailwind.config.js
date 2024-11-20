@@ -6,7 +6,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        titulo: ['var(--font-agbalumo)'],
+        subtitulo: ['var(--font-poppins)'],
+        general: ['var(--font-montserrat)'],
+      }
+    },
   },
   plugins: [],
 }

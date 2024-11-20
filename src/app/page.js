@@ -5,6 +5,7 @@ import Variedades from "@/componentes/variety";
 import Carrusel from "@/componentes/carrusel";
 import Image from "next/image";
 import Banner from "@/componentes/banner";
+import { agbalumo, poppins, montserrat } from "@/lib/fonts";
 
 const slides = [
   "/Parral01.png",
@@ -16,7 +17,8 @@ const slides = [
 
 export default function Home() {
   return (
-    <>
+    
+    <main className={`${agbalumo.variable} ${poppins.variable} ${montserrat.variable}`}>
       <div className="px-8 sm:px-8 py-2 sm:py-3 bg-amber-400 hover:bg-gray-500">
         <Header />
       </div>
@@ -39,6 +41,7 @@ export default function Home() {
       <div>
         <Footer />
       </div>
-    </>
+      </main>
+    
   );
 }
