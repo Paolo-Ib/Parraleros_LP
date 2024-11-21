@@ -15,7 +15,7 @@ export default function Footer() {
             href="https://wa.me/+5493704836752"
             onClick={() => {
               sendGTMEvent({ event: 'click_link_GV', value: '17.000' });
-              sendGAEvent({ event: 'click_link_GV', value: '17.000' });
+              sendGAEvent ('event', 'click_link_GV', { value: '1.000' });
             }}
             target="_blank" 
             rel="noopener noreferrer">
@@ -26,7 +26,7 @@ export default function Footer() {
             href="https://wa.me/+5493704507728" 
             onClick={() => {
               sendGTMEvent({ event: 'click_link_PI', value: '17.000' });
-              sendGAEvent({ event: 'click_link_PI', value: '17.000' });
+              sendGAEvent ('event', 'click_link_PI', { value: '1.000' });
             }}
             target="_blank" 
             rel="noopener noreferrer">
@@ -45,7 +45,7 @@ export default function Footer() {
           href="https://www.instagram.com/parraleros" 
           onClick={() => {
             sendGTMEvent({ event: 'click_link_IG', value: '1.000' });
-            sendGAEvent({ event: 'click_link_IG', value: '1.000' });
+            sendGAEvent ('event', 'click_link_IG', { value: '1.000' });
           }}
           target="_blank" 
           rel="noopener noreferrer"
@@ -60,6 +60,10 @@ export default function Footer() {
           <p>desarrollado por <b>BuRHò Profesional 2024</b></p>
             <a 
             href="https://www.facebook.com/burhoprofesional"
+            onClick={() => {
+              sendGTMEvent({ event: 'click_link_BP', value: '1.000' });
+              sendGAEvent ('event', 'click_link_BP', { value: '1.000' });
+            }}
             target="_blank"
             rel="noopener noreferrer"
             >
