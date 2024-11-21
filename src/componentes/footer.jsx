@@ -1,6 +1,6 @@
 "use client"
 import { FaWhatsappSquare, FaInstagramSquare, FaFacebookSquare } from "react-icons/fa";
-import { sendGTMEvent } from '@next/third-parties/google';
+import { sendGTMEvent, sendGAEvent } from '@next/third-parties/google';
 import Image from 'next/image';
 
 export default function Footer() {
@@ -13,7 +13,10 @@ export default function Footer() {
           <p className="text-2xl">
             <a 
             href="https://wa.me/+5493704836752"
-            onClick={() => sendGTMEvent({ event: 'click_link_GV', value: '17.000' })}
+            onClick={() => {
+              sendGTMEvent({ event: 'click_link_GV', value: '17.000' });
+              sendGAEvent({ event: 'click_link_GV', value: '17.000' });
+            }}
             target="_blank" 
             rel="noopener noreferrer">
               Gustavo: +549 3704-836752
@@ -21,7 +24,10 @@ export default function Footer() {
             --|--    
             <a 
             href="https://wa.me/+5493704507728" 
-            onClick={() => sendGTMEvent({ event: 'click_link_PI', value: '17.000' })}
+            onClick={() => {
+              sendGTMEvent({ event: 'click_link_PI', value: '17.000' });
+              sendGAEvent({ event: 'click_link_PI', value: '17.000' });
+            }}
             target="_blank" 
             rel="noopener noreferrer">
               Paolo: +549 3704-507728
@@ -37,7 +43,10 @@ export default function Footer() {
           <p>Seguinos en:</p>
           <a 
           href="https://www.instagram.com/parraleros" 
-          onClick={() => sendGTMEvent({ event: 'click_link_IG', value: '1000' })}
+          onClick={() => {
+            sendGTMEvent({ event: 'click_link_IG', value: '1.000' });
+            sendGAEvent({ event: 'click_link_IG', value: '1.000' });
+          }}
           target="_blank" 
           rel="noopener noreferrer"
           >
@@ -55,7 +64,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             >
             <Image 
-            src="/Logo_burho_f_negro.png" 
+            src="/Logo_Burho_f_negro.png" 
             alt="Logo_burho" 
             width="25" 
             height="25" 
